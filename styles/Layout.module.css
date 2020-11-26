@@ -1,0 +1,53 @@
+.header {
+    width: 100%;
+    text-align: center;
+    background: rgb(141,0,255);
+    background: radial-gradient(circle, rgba(141,0,255,1) 0%, rgba(137,5,255,1) 23%, rgba(59,106,255,1) 78%, rgba(0,181,255,1) 100%);
+    padding: 10px;
+    color: white;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 15px;
+    cursor: default;
+    user-select: none;
+}
+
+.header .links a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.header .links a:not(:last-child)::after {
+    content: '\00B7';
+    margin: 8px;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    margin: 80px auto;
+    width: 50%;
+}
+
+.textJustified *:not(h2) {
+    text-align: justify;
+}
+
+.textSmallGray p {
+    color: #474747;
+    font-size: 1em;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a:not(:first-child)::before {
+    content: '|';
+    margin: 3px;
+}
