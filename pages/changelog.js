@@ -1,10 +1,21 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import ReactMarkdown from 'react-markdown'
 
-function Changelog({ changelogSource }) {
-  return <Layout title='Changelog'>
-    <a href='https://github.com/Simply-Synonyms/simply-synonyms/blob/master/changelog.md'>Click here to view the changelog</a>
+function Changelog({ changelogMarkdown }) {
+  return <Layout textJustified title='Changelog'>
+    <ReactMarkdown source={changelogMarkdown}/>
   </Layout>
+}
+
+export async function getStaticProps(ctx) {
+  const changelogMarkdown = await fetch('https://raw.githubusercontent.com/Simply-Synonyms/simply-synonyms/master/changelog.md').then(res => res.text())
+
+  return {
+    props: {
+      changelogMarkdown
+    }
+  }
 }
 
 export default Changelog

@@ -10,10 +10,11 @@ export default function Layout({ title, children, mdx, textJustified, textSmallG
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,300;1,400;1,600&family=Nunito:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet"/>
+        { process.env.NODE_ENV === 'production' && <script async defer src="https://viscount.synonyms.bweb.app/latest.js"></script>}
       </Head>
 
       <nav className={styles.header}>
-        <h1>Simply Synonyms</h1>
+        <Link href='/'><h1>Simply Synonyms</h1></Link>
         <div className={styles.links}>
           <Link href='/'><a>home</a></Link>
           <Link href='/#install'><a>install</a></Link>

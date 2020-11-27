@@ -10,7 +10,7 @@
 .header h1 {
     font-size: 2.5em;
     margin: 15px;
-    cursor: default;
+    cursor: pointer;
     user-select: none;
 }
 
