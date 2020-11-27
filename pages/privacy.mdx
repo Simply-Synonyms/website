@@ -4,22 +4,85 @@ import Layout from '../components/Layout'
 
 ## Privacy
 
-<h5 style={{ textAlign: 'center' }}>Last updated November 26, 2020</h5>
+<h5 style={{ textAlign: 'center' }}>Revised November 27, 2020</h5>
 
-<span style={{ fontWeight: 'bold', color: 'gray' }}>We respect your privacy. We do not sell any of your personal information to third parties. We only store data required for the core functionality of the Extension and any additional features you have enabled.</span>
+  <h5 style={{ textAlign: 'center' }}><u>This policy does not apply to any Simply Synonyms versions before v0.3.0.</u></h5>
 
-This document details what data we collect from you when you use our Extension, and how and why we use it. _Extension refers to the [Simply Synonyms Chrome Extension](https://chrome.google.com/webstore/detail/simply-synonyms/hapeijdlgbbhjmijhmgggnakcgdcpfap)._
+<span style={{ fontWeight: 'bold', color: 'gray' }}>In short: We respect your privacy. We do not sell any of your personal information to third parties. We only store and process data required for the core functionality of the Extension and any additional features you have enabled. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at privacy<code>&#64;</code>synonyms.bweb.app.</span>
 
-### 1. What information do we collect?
+  ---
 
-**As of V0.3.0**: The Simply Synonyms backend runs on Google Firebase. Google Firebase provides hosting for our API, which your browser sends a request to in order to look up synonyms, etc. Google Firebase also provides identity and authentication management. Google Firebase may log your IP address and other request data (such as the word when requesting synonyms). We only use this data to provide synonym and word data for our Extension, as well as other core functionality. If you do not sign in to the Extension, we will not store any of your personal information other than temporary request logs.
+This document details what data we collect from you when you use our Extension, and how and why we use it. Throughout this policy, "Extension" refers exclusively to the [Simply Synonyms Chrome Extension](https://chrome.google.com/webstore/detail/simply-synonyms/hapeijdlgbbhjmijhmgggnakcgdcpfap).
 
-We also use Mailgun for sending and managing emails. If you sign in to the Extension, we will share your email, name and subscription information with Mailgun solely for the purpose of sending you emails. You may unsubscribe from these emails at any time.
+### 1. What data do we collect?
 
-Our Extension requires permission to access and change data on all websites, as well as permission to interact with tabs. These permissions only enable core functionality. The Extension does not collect your browsing history or tab information, and does not interfere with your tabs or webpages.
+##### Personal information you voluntarily provide us with:
 
-We do not collect any additional information.
+If you choose to sign in to the Extension using your Google account, Google may provide us with some of your information, with your permission, specifically your email and profile information (such as your name and profile picture).
 
-[View Firebase Security and Privacy Policies](https://firebase.google.com/support/privacy)
+##### Usage data
+
+If you choose to sign in to the Extension we may collect various usage statistics from you, such as the number of synonyms you search for each week and year. This is used to provide additional functionality to you, such as an optional weekly email that includes the aforementioned statistics.
+
+We may also use this data for the purpose of gaining insight and improving our Extension. However, all data used in this manner or for analytics purposes is completely anonymized, meaning we don't include any personally identifying information that could be correlated with your account.
+
+##### Automatically collected information and logging
+
+When you perform an action using the Extension, such as double clicking a word to access synonym information, your browser sends a request to our servers to fetch the request data. We may log request details such as your IP address and user-agent string. This is used solely for functionality, security, and to prevent abuse of our systems.
+
+### 2. How do we use your information?
+
+We use the information we collect or receive exclusively:
+
++ To provide functionality within our Extension.
++ To secure and protect our Extension.
++ To send administrative information to you. We may use your name and email to send you information about your account and/or information about changes to our terms, conditions, and policies.
++ To facilitate the collection of synonym statistics and usage data for the purpose of providing additional Extension functionality.
++ To send informational emails, such as our weekly mailing containing your usage stats, the "Synonyms of the Week", occasional promotional content, feedback requests, and more. You always have the option to opt-out from these emails with the unsubscribe button in the footer of each email.
++ To offer support to users. We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Extension.
++ For compliance with our legal obligations.
+
+### 3. Why does the Extension require access to my data on the websites I visit?
+
+  The Extension requires permission to access and change data on all websites, as well as permission to interact with tabs. These permissions only enable core functionality.
+
+  When you load a web page, the extension injects an initially hidden popup into the page along with an event listener that waits for you to double click any word on the page, which triggers a script that finds which word you selected and sends it to our servers (along with an ID token if you are signed into the extension); where our servers process the selected word and return synonym data to the extension.
+
+  **We do not and will never collect your browsing history, tab information, or website usage, and will not interfere with your tabs and web browsing in a malicious manner**.
+
+### 4. Vendors and sub-processors
+
+Your data may pass through several third party vendors and service providers who provide services for us and require access to your information on our behalf. Examples include server hosting services and email delivery. Unless described in this Policy, **we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.** This table provides a list of the major vendors and sub-processors that power our Extension:
+
+  | Vendor      | Description |
+  | ----------- | ----------- |
+  | Google Cloud Platform | Google Cloud Platform provides the cloud infrastructure for the Extension. The majority of user data we store is stored in Google Firebase services. Google Firebase provides hosting for our API, which your browser sends a request to in order to look up synonyms, etc. Google Firebase also provides identity and authentication tools. We store and process your information using Google Cloud Platform and Firebase in accordance with the policies listed in this document; however, **if you do not sign in to the Extension, we will not store any of your personal information** other than temporary request logs. For technical specifications on Firebase privacy, please [see here](https://firebase.google.com/support/privacy). |
+  | Mailgun | We use Mailgun to send emails and manage unsubscribes. If you sign in to the Extension, we will share your email, name and subscription information with Mailgun solely for the purpose of sending you emails.  |
+  | Vercel | This website ([synonyms.bweb.app](https://synonyms.bweb.app/)) is hosted by Vercel, which may log your IP address and user-agent string when you visit this website for security purposes. |
+
+### 5. How do we keep your information safe?
+
+  We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process, including data encryption and HTTPS. However, please also remember that we cannot guarantee that the internet itself is 100% secure. Although we will do our best to protect your personal information, transmission of personal information to and from our cloud infrastructure is at your own risk.
+
+### 6. What are your privacy rights?
+
+  If you do not agree with our processing of your data as described in this policy, you have the right to not use our services.
+
+You may review, change, view a copy of any data stored on, or terminate your account, or submit a complaint about the way your data is handled at any time by emailing us at [privacy@synonyms.bweb.app](mailto:privacy@synonyms.bweb.app)
+
+### 7. How long do we store your data after you delete your account?
+
+We will delete your data from our database within 30 days after you request account deletion. However, some of your data **might** remain present for up to 180 days in database backups. Additionally, we may not delete anonymized usage and synonym data collected during the time when you had an account with us.
+
+**Please note that uninstalling the extension will not automatically delete your account.** If you would like to request full account deletion please contact us.
+
+
+### 8. Miscellaneous
+
+  **We may update this privacy policy from time to time**. The updated version will be indicated by an updated “Revised” date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy policy, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification.
+
+  We do not knowingly solicit data from or market to children under 18 years of age.
+
+  If you have questions or comments about this policy, you may email us at [privacy@synonyms.bweb.app](mailto:privacy@synonyms.bweb.app).
 
 </Layout>

@@ -18,6 +18,7 @@ export default function Layout({ title, children, mdx, textJustified, textSmallG
           <Link href='/'><a>home</a></Link>
           <Link href='/#install'><a>install</a></Link>
           <Link href='/contact'><a>support & feature requests</a></Link>
+          <Link href='/changelog'><a>changelog</a></Link>
         </div>
       </nav>
 

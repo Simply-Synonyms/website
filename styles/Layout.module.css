@@ -34,11 +34,23 @@
     width: 50%;
 }
 
+@media (max-width: 1500px) {
+    .container {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 85%;
+    }
+}
+
 .textJustified *:not(h2) {
     text-align: justify;
 }
 
-.textSmallGray p {
+.textSmallGray p, .textSmallGray li, .textSmallGray td {
     color: #474747;
     font-size: 1em;
 }
