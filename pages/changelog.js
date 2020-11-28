@@ -15,7 +15,7 @@ export async function getStaticProps(ctx) {
     props: {
       changelogMarkdown
     },
-    revalidate: 60 * 24 // re-fetch once per day
+    revalidate: 1 // re-fetch once per hour
   }
 }
 
