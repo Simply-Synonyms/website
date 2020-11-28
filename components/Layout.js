@@ -19,7 +19,7 @@ export default function Layout({ title, children, mdx, textJustified, textSmallG
           <Link href='/'><a>home</a></Link>
           <Link href='/#install'><a>install</a></Link>
           <Link href='/contact'><a>support & feature requests</a></Link>
-          <Link href='/changelog'><a>changelog</a></Link>
+          {/*<Link href='/changelog'><a>changelog</a></Link>*/}
         </div>
       </nav>
 
@@ -31,6 +31,7 @@ export default function Layout({ title, children, mdx, textJustified, textSmallG
         <p>
           &copy; { new Date().getFullYear() } <a href='https://benjaminashbaugh.me' target='_blank'>Benjamin Ashbaugh</a>
           <Link href='/privacy'><a>Privacy</a></Link>
+          <Link href='/changelog'><a>Changelog</a></Link>
           <a href='https://github.com/Simply-Synonyms' rel='noopener noreferrer'>GitHub</a>
         </p>
       </footer>
