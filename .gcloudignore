@@ -1,0 +1,7 @@
+/node_modules
+
+# Ignore source and cache files
+/pages
+/components
+/styles
+.next
