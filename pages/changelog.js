@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown'
 
 function Changelog({ changelogMarkdown }) {
   return <Layout textJustified title='Changelog'>
-    <ReactMarkdown source={changelogMarkdown}/>
+    <ReactMarkdown source={changelogMarkdown || 'Loading...'}/>
   </Layout>
 }
 
@@ -15,7 +15,15 @@ export async function getStaticProps(ctx) {
     props: {
       changelogMarkdown
     },
-    revalidate: 60*60 // re-fetch once per hour
+    revalidate: 60 // Once per minute max
+  }
+}
+
+export async function GetStaticPaths() {
+  // Have to do this for revalidate to work
+  return {
+    paths: [],
+    fallback: true,
   }
 }
 
