@@ -8,7 +8,8 @@ function Changelog({ changelogMarkdown }) {
   </Layout>
 }
 
-export async function getStaticProps(ctx) {
+// I'll have to use getServerSideProps until I figure out why revalidate isn't working with app engine
+export async function getServerSideProps(ctx) {
   const changelogMarkdown = await fetch('https://raw.githubusercontent.com/Simply-Synonyms/simply-synonyms/main/changelog.md').then(res => res.text())
 
   return {
@@ -16,14 +17,6 @@ export async function getStaticProps(ctx) {
       changelogMarkdown
     },
     revalidate: 60 // Once per minute max
-  }
-}
-
-export async function GetStaticPaths() {
-  // Have to do this for revalidate to work
-  return {
-    paths: [],
-    fallback: true,
   }
 }
 
