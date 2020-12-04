@@ -16,7 +16,7 @@ export async function getServerSideProps(ctx) {
     props: {
       changelogMarkdown
     },
-    revalidate: 60 // Once per minute max
+    // revalidate: 60 // Once per minute max
   }
 }
 
