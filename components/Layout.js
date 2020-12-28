@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Layout.module.css'
 
-export default function Layout({ title, children, mdx, textJustified, textSmallGray }) {
+export default function Layout({ title, children, mdx, textJustified, textSmallGray, coloredLinks }) {
   return (
     <div className={styles.page}>
       <Head>
@@ -23,7 +23,7 @@ export default function Layout({ title, children, mdx, textJustified, textSmallG
         </div>
       </nav>
 
-      <div className={`${styles.container} ${ mdx && 'content'} ${ textJustified && styles.textJustified} ${ textSmallGray && styles.textSmallGray}`}>
+      <div className={`${styles.container} ${ mdx && 'content'} ${ textJustified && styles.textJustified} ${ textSmallGray && styles.textSmallGray} ${coloredLinks && styles.coloredLinks }`}>
         { children }
       </div>
 
